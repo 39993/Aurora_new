@@ -2,7 +2,10 @@ package com.aorora.app.cluster;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.aorora.app.R;
 import com.aorora.app.adapter.MemberAdapter;
@@ -17,6 +20,7 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * author : Administrator on 2017/6/1.
@@ -29,6 +33,12 @@ public class MemberListActivity extends AppBaseActivity implements IMemberView {
 
     @Bind(R.id.member_list)
     ListView mMemberList;
+    @Bind(R.id.keyword)
+    EditText mKeyword;
+    @Bind(R.id.search)
+    TextView mSearch;
+    @Bind(R.id.searchs)
+    LinearLayout mSearchs;
     private IMemberPresenter mPresenter;
 
     private int startSize = 0;// 分页起始码
@@ -69,7 +79,7 @@ public class MemberListActivity extends AppBaseActivity implements IMemberView {
 
         if (null == list) return;
 
-        Log.e("会员", "handleData: "+list.toString() );
+        Log.e("会员", "handleData: " + list.toString());
 
         adapter.setList(list);
 
@@ -94,4 +104,9 @@ public class MemberListActivity extends AppBaseActivity implements IMemberView {
     }
 
 
+    @OnClick(R.id.search)
+    public void onViewClicked() {
+
+
+    }
 }
