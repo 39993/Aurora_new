@@ -20,10 +20,7 @@ public class MyUtils {
 
 
     /**
-     *yyyyyyyyyyyyyyyyyyyyyyyyy................
-     *
-     *
-     *debug      zzzzzzzzzzzzz
+     *XJQ
      *
      *
      * 获取屏幕的宽和高
