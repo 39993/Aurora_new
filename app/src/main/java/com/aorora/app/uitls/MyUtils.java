@@ -20,7 +20,7 @@ public class MyUtils {
 
 
     /**
-     *xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+     *yyyyyyyyyyyyyyyyyyyyyyyyy................
      * 获取屏幕的宽和高
      * @param context
      * @return
