@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pup_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="联系客服"
+                    android:textColor="#222222"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/delete_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="3dp"
+                    android:src="@mipmap/close2" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:padding="5dp"
+                android:text="扫描下方的二维码关注我们的微信公众号或这届拨打客服电话进行咨询！"
+                android:textColor="#8e660b"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/code_image"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/default_image" />
+
+            <Button
+                android:id="@+id/phone_btn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_brown"
+                android:text="拨打电话 "
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/workTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="客服在线时间：上午9:00-12:00 下午13:30-15:30"
+                android:textColor="#222222"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

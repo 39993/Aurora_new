@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aorora.app.membercenter.AccountActivity">
+
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:divider="@drawable/divider"
+                android:showDividers="middle"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:padding="5dp"
+                        android:drawableLeft="@mipmap/ico_right_tip"
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="商城账户充值金额："
+                        android:textColor="#222222" />
+
+                    <TextView
+                        android:id="@+id/chargeinthemallaccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/text"
+                        android:text="￥0.0"
+                        android:textColor="@color/textprice_orange" />
+                </RelativeLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:padding="5dp"
+                        android:drawableLeft="@mipmap/ico_right_tip"
+                        android:id="@+id/text02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="商城账户美丽定制专用余额："
+                        android:textColor="#222222" />
+
+                    <TextView
+                        android:id="@+id/mallaccounttheamountofbeautifulcustom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/text02"
+                        android:text="￥0.0"
+                        android:textColor="@color/textprice_orange" />
+                </RelativeLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff" >
+
+
+
+                    <TextView
+                        android:padding="5dp"
+                        android:drawableLeft="@mipmap/ico_right_tip"
+                        android:id="@+id/text03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="美丽定制代金券："
+                        android:textColor="#222222" />
+
+                    <TextView
+                        android:id="@+id/beautifulcustomvouchers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/text03"
+                        android:text="￥0.0"
+                        android:textColor="@color/textprice_orange" />
+                </RelativeLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:padding="5dp"
+                        android:drawableLeft="@mipmap/ico_right_tip"
+                        android:id="@+id/text04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="品质商城代金券："
+                        android:textColor="#222222" />
+
+                    <TextView
+                        android:id="@+id/thequalityofshoppingvouchers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/text04"
+                        android:text="￥0.0"
+                        android:textColor="@color/textprice_orange" />
+                </RelativeLayout>
+
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:padding="5dp"
+                        android:drawableLeft="@mipmap/ico_right_tip"
+                        android:id="@+id/text05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="剩余运费抵用券："
+                        android:textColor="#222222" />
+
+                    <TextView
+                        android:id="@+id/theremainingfreightvouchers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/text05"
+                        android:text="￥0.0"
+                        android:textColor="@color/textprice_orange" />
+                </RelativeLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:padding="5dp"
+                        android:drawableLeft="@mipmap/ico_right_tip"
+                        android:id="@+id/text06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="可用砸蛋收入："
+                        android:textColor="#222222" />
+
+                    <TextView
+                        android:id="@+id/theavailableincomeofsmashingeggs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/text06"
+                        android:text="￥0.0"
+                        android:textColor="@color/textprice_orange" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="0"
+                    android:background="#fefefe"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/revenuelog"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="收入日志"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:background="@color/bg_common" />
+
+                    <TextView
+                        android:id="@+id/applicationforpayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="申请发放"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:background="@color/bg_common" />
+
+                    <TextView
+                        android:id="@+id/releaserecord"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="发放记录"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:padding="5dp"
+                        android:drawableLeft="@mipmap/ico_right_tip"
+                        android:id="@+id/text07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="可用砸蛋管理费："
+                        android:textColor="#222222" />
+
+                    <TextView
+                        android:id="@+id/smashingeggsavailablemanagementfees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/text07"
+                        android:text="￥0.0"
+                        android:textColor="#e98f00" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="0"
+                    android:background="#fefefe"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/managementfeeJournal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="管理费日志"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:background="@color/bg_common" />
+
+                    <TextView
+                        android:id="@+id/mapplicationforpayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="申请发放"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:background="@color/bg_common" />
+
+                    <TextView
+                        android:id="@+id/mreleaserecord"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="发放记录"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+
+</RelativeLayout>

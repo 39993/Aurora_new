@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aorora.app.home.GiftActivity">
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/gift_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ScrollView
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.aorora.app.banner.Banner
+                        android:id="@+id/gift_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/title_top" >
+
+                        <TextView
+                            android:id="@+id/numberofsmashingeggs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="当前可领取奖品次数：0次"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/activityrule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:text="活动规则"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <com.aorora.app.widget.MyGridView
+                        tools:listitem="@layout/goods_item"
+                        android:background="@color/bg_common"
+                        android:horizontalSpacing="2dp"
+                        android:numColumns="2"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:textSize="14sp"
+                        android:verticalSpacing="2dp"
+                        android:id="@+id/gift_grideview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/classification"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.1"
+            android:clickable="true"
+            android:drawableRight="@mipmap/down_arrow"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:text="分类"
+            android:textColor="#222222"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/keyword"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/gray_btnblack"
+            android:drawableLeft="@mipmap/ic_search_gray"
+            android:paddingLeft="4dp"
+            android:hint="请输入关键词快速检索"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/serach"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2.1"
+            android:background="@drawable/redbtn"
+            android:padding="5dp"
+            android:text="搜索"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aorora.app.login.LoginActivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/banner_default" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/membername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/input_page"
+        android:drawableLeft="@mipmap/ico_login_user"
+        android:textColor="#222222"
+        android:hint="请输入会员编号"
+        android:textSize="13sp" />
+
+
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/memberpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColor="#222222"
+        android:background="@drawable/input_page"
+        android:drawableLeft="@mipmap/ico_login_password"
+        android:hint="请输入登录密码"
+        android:inputType="textPassword"
+        android:textSize="13sp" />
+
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_brown"
+        android:text="登     录"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="快速注册"
+            android:textColor="#222222"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/rememberpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="忘记密码？"
+            android:textColor="#222222"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

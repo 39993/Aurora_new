@@ -3,4 +3,28 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="window_bg_gray">#f0f0f0</color>
+    <color name="list_divider">#e5e5e5</color>
+    <color name="title_black">#333333</color>
+    <color name="video_action_bar_holo_black">#55000000</color>
+    <color name="color_primary">#42a1ff</color>
+    <color name="color_primary_dark">#0080ff</color>
+    <color name="video_text">#666666</color>
+
+
+
+    <color name="textprice_red">#e60202</color>
+    <color name="title_top">#d2a319</color>
+    <color name="top_tex">#282828</color>
+    <color name = "layout_write">#ffffff </color>
+    <color name = "text_title">#303030</color>
+    <color name="bg_common">#f4f4f4</color>
+    <color name="textprice_orange">#c08608</color>
+
 </resources>

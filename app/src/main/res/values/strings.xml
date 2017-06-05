@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Aurora</string>
+    <string name="app_name">奥若拉</string>
+
+
+    <string name="dialog_setting_btn_ok">去设置</string>
+    <string name="dialog_setting_btn_cancel">退出</string>
+    <string name="warning">警告</string>
+    <string name="permissions_setting">缺少使用该功能的必要权限，去设置</string>
+    <string name="toast_app_crash">程序出现异常</string>
+
 </resources>
